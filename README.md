@@ -5,6 +5,7 @@ API desenvolvida usando SpringBoot e outras tecnologias, com persistência de da
 ___________________________________
 
 Endpoints: 
+
 Rebeldes
 
 GET - Listar Usuários
