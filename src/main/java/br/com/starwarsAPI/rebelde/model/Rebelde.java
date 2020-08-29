@@ -36,8 +36,12 @@ public class Rebelde implements Serializable {
 	@OneToMany
 	private List<Inventario> inventario;
 	
+	public Rebelde() {
+		
+	}
+	
 	public Rebelde(String nome, int idade, String genero, String latitude, String longitude,
-			String baseNome, String obs, List<Inventario> inventario) {
+			String baseNome, String obs) {
 		super();
 		this.nome = nome;
 		this.idade = idade;
@@ -45,7 +49,6 @@ public class Rebelde implements Serializable {
 		this.latitude = latitude;
 		this.longitude = longitude;
 		this.baseNome = baseNome;
-		this.inventario = inventario;
 	}
 	
 	public List<Inventario> getInventario() {
@@ -123,8 +126,7 @@ public class Rebelde implements Serializable {
 	@Override
 	public String toString() {
 		return "Rebelde [id=" + id + ", nome=" + nome + ", idade=" + idade + ", genero=" + genero + ", latitude="
-				+ latitude + ", longitude=" + longitude + ", baseNome=" + baseNome + ", obs=" + obs + ", inventario="
-				+ inventario + "]";
+				+ latitude + ", longitude=" + longitude + ", baseNome=" + baseNome + ", obs=" + obs + "]";
 	}
 	
 }
